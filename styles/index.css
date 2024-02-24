@@ -1,0 +1,159 @@
+.body {
+    background-color: #2E3CB7;
+    width: 100%;
+    min-height: 100%;
+    min-width: 1440px;
+    min-height: 900px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.logo{
+font-family: 'Bruno Ace SC';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 66px;
+color: #FFFFFF;
+}
+
+.animate__fadeIn{
+    animation-duration: 6s;
+    animation-delay: 0.2s;
+}
+
+.container-big {
+    max-width: 954px;
+    min-height: 594px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
+    background-color: #EFFFFF;
+}
+
+
+.image {
+  position: absolute;
+  height: 30%;
+  width: 40%;
+  right: -5%;
+  -o-object-fit: contain;
+   object-fit: contain;
+   animation: hbanimate 1s linear infinite;
+}
+
+
+@keyframes hbanimate {
+    0%{ 
+        transform: scale(1);
+    }
+    20%{ 
+        transform: scale(1.2);  
+    }
+    40%{  
+        transform: scale(1.05);
+    }
+    60%{ 
+        transform: scale(1.2); 
+    }
+    80%{  
+        transform: scale(1);
+    }
+    100%{  
+        transform: scale(1);
+    }
+}
+
+
+.form {
+    display: flex;
+    flex: 1 0 65%;
+    margin-left: 65px;
+    margin-top: 64px;
+    flex-direction: column;
+}
+
+.labels {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease-out;  
+    text-transform: uppercase;
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0a0a0a;
+}
+
+.button{
+    position: absolute;
+    cursor: pointer;
+    margin: 56px;
+    display: block;
+    height: 48px;
+    min-width: 202px;
+    background-color: #2E3CB7;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FEFFFF;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: rgb(10, 12, 142); 
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+  
+
+.input-field {
+  background-color: #EFFFFF;
+  border-bottom: 1px solid #9DBEBB;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  padding: 5px;
+  max-width:380px;
+  width: 70%;
+  color: #080707;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.input-field::placeholder{
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    color: rgb(9, 9, 9);
+}
+
+#name, #message {
+    max-width: 380px;
+    width: 100%;
+}
+
+
+
